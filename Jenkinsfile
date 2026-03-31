@@ -1,7 +1,7 @@
 pipeline
 {
     agent any
-    {
+
         stages
         {
             stage('Build')
@@ -10,7 +10,7 @@ pipeline
                 {
                     sh """
                         echo 'Running Build Stage'
-                        sudo cp index.html /var/www/html/index_nginx.html
+                        sudo cp index2.html /var/www/html/index_nginx.html
                         echo "Build Completed"
                     """
                 }
@@ -27,5 +27,4 @@ pipeline
                 }
             }
         }
-    }
 }
